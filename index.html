@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1 class="logo">Logo</h1>
+    <header class="header">
+      <input type="checkbox" id="menu__toggle">
+      <label for="menu__toggle" class="menu__icons">
+        <img class="menu__open" src="./assets/menu.svg" alt="">
+        <img class="menu__close" src="./assets/close.svg" alt="">
+      </label>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="">Home</a></li>
+          <li class="nav__item"><a href="">Portfolio</a></li>
+          <li class="nav__item"><a href="">Blog</a></li>
+          <li class="nav__item"><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="searchbox" action="">
+        <input class="searchbox__field" type="text" placeholder="search">
+        <button class="searchbox__button">
+        </button>
+      </form>
+    </header>
+    <main class="main">
+      <section class="slider swiper-container">
+        <img class="slider__prev" src="./assets/slider-arrow.svg" alt="">
+        <img class="slider__next" src="./assets/slider-arrow.svg" alt="">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="slider__image" src="./assets/slider_image.png" alt="city view">
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="card">
+          <img class="card__image" src="./assets/card_pic1.png" alt="">
+          <p class="card__text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fuga quidem totam soluta, alias autem. Tempore non voluptates incidunt, repellat quibusdam, pariatur dolorem voluptatibus iusto inventore magni eius reiciendis quaerat?</p>
+          <a class="card__link" href="">more...</a>
+        </div>
+        <div class="card">
+          <img class="card__image" src="./assets/card_pic2.png" alt="">
+          <p class="card__text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fuga quidem totam soluta, alias autem. Tempore non voluptates incidunt, repellat quibusdam, pariatur dolorem voluptatibus iusto inventore magni eius reiciendis quaerat?</p>
+          <a class="card__link" href="">more...</a>
+        </div>
+        <div class="card">
+          <img class="card__image" src="./assets/card_pic3.png" alt="">
+          <p class="card__text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fuga quidem totam soluta, alias autem. Tempore non voluptates incidunt, repellat quibusdam, pariatur dolorem voluptatibus iusto inventore magni eius reiciendis quaerat?</p>
+          <a class="card__link" href="">more...</a>
+        </div>
+        <div class="card">
+          <img class="card__image" src="./assets/card_pic4.png" alt="">
+          <p class="card__text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fuga quidem totam soluta, alias autem. Tempore non voluptates incidunt, repellat quibusdam, pariatur dolorem voluptatibus iusto inventore magni eius reiciendis quaerat?</p>
+          <a class="card__link" href="">more...</a>
+        </div>
+      </section>
+      <section class="welcome">
+        <div class="welcome__images">
+          <img src="./assets/card_pic1.png" alt="">
+          <img src="./assets/card_pic2.png" alt="">
+          <img src="./assets/card_pic3.png" alt="">
+          <img src="./assets/card_pic4.png" alt="">
+        </div>
+        <div class="welcome__info">
+          <h4 class="welcome__header">Welcome to the site</h4>
+          <p class="welcome__text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam dolorem officia, nulla aut temporibus atque id impedit placeat, fugiat repudiandae sapiente facere officiis adipisci, rerum quaerat consectetur libero tenetur nesciunt deserunt quas. Ea nam tempora nihil animi veritatis neque laboriosam. Veritatis, ex debitis. Nam iste cupiditate enim dolores nemo.</p>
+          <a class="welcome__link" href="">more...</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="">Terms of Service</a>
+      <a href="">Privacy Policy</a>
+      <span>© 2009 Designzzz (www.designzzz.com)</span>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        spaceBetween: 20,
+        loop: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: '.slider__next',
+          prevEl: '.slider__prev',
+        },
+      })
+    </script>
+  </body>
+</html>
